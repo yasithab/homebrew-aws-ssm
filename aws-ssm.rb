@@ -5,20 +5,20 @@
 class AwsSsm < Formula
   desc "AWS SSM Utility"
   homepage "https://github.com/yasithab/aws-ssm"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yasithab/aws-ssm/releases/download/1.0.2/aws-ssm_Darwin_x86_64.tar.gz"
-      sha256 "e1c640ea8d0d9ebb76f2efb379080cd801a95e1eb039a9f5edd069c9f2544c2a"
+      url "https://github.com/yasithab/aws-ssm/releases/download/1.0.3/aws-ssm_Darwin_x86_64.tar.gz"
+      sha256 "a7374c65b6852811f3f5812c2d3a18aeff5e954d7ecf5bc2f5b396744767792f"
 
       def install
         bin.install "aws-ssm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yasithab/aws-ssm/releases/download/1.0.2/aws-ssm_Darwin_arm64.tar.gz"
-      sha256 "d6c65740abe514465ef9221afa061222c093018d5dde5d2404ba85a804af2fb4"
+      url "https://github.com/yasithab/aws-ssm/releases/download/1.0.3/aws-ssm_Darwin_arm64.tar.gz"
+      sha256 "f45686a6cebcd004cadca7c1ebf09e0148298668139c0c0798c9955d6e498f4b"
 
       def install
         bin.install "aws-ssm"
@@ -29,8 +29,8 @@ class AwsSsm < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yasithab/aws-ssm/releases/download/1.0.2/aws-ssm_Linux_x86_64.tar.gz"
-        sha256 "e847ab5fd4297d4cc6dcbf02201dca083d579789b268810e7b4a4d02f7a7d5cf"
+        url "https://github.com/yasithab/aws-ssm/releases/download/1.0.3/aws-ssm_Linux_x86_64.tar.gz"
+        sha256 "cdff619818f5074f9c8661ed6a994a8dc1c18b61c83866a864424eb9dcbd1d8c"
 
         def install
           bin.install "aws-ssm"
@@ -39,8 +39,8 @@ class AwsSsm < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yasithab/aws-ssm/releases/download/1.0.2/aws-ssm_Linux_arm64.tar.gz"
-        sha256 "41b307d14ca58ab22086d262d23c637a388e614bb5bc8ed18c0f823332d2d284"
+        url "https://github.com/yasithab/aws-ssm/releases/download/1.0.3/aws-ssm_Linux_arm64.tar.gz"
+        sha256 "fae78ae99f7cbe47080a11497e8d7cce703cd202f7fda4d47008bad08326eb6a"
 
         def install
           bin.install "aws-ssm"
